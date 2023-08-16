@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 
 import SimilarProductItem from "../SimilarProductItem"
-import PulseLoader from "react-spinners/PulseLoader"
+// import PulseLoader from "react-spinners/PulseLoader"
 
 import "./index.css"
 
@@ -193,7 +193,8 @@ let ProductItemDetails = (props) => {
   let renderLoadingView = () => {
     return (
       <div className="products-details-loader-container">
-        <PulseLoader size={15} color="#0b69ff" />
+      <h1>Loading</h1>
+        // <PulseLoader size={15} color="#0b69ff" />
       </div>
     )
   }
